@@ -1,4 +1,5 @@
 import React from 'react';
+import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 import AgoraUIKit from 'agora-rn-uikit';
 import { useNavigation } from '@react-navigation/native';
 
@@ -30,10 +31,32 @@ export default function Conference(props) {
   };
 
   return (
-    <AgoraUIKit
-      rtcProps={rtcProps}
-      callbacks={callbacks}
-      styleProps={styleProps}
-    />
+    <>
+      <AgoraUIKit
+        rtcProps={rtcProps}
+        callbacks={callbacks}
+        styleProps={styleProps}
+      />
+      <TouchableOpacity style={styles.shareButton}>
+        <Text style={styles.shareButtonText}>Share</Text>
+      </TouchableOpacity>
+    </>
   );
 }
+
+const styles = StyleSheet.create({
+  shareButton: {
+    right: 0,
+    width: 80,
+    height: 40,
+    margin: 25,
+    borderRadius: 8,
+    position: 'absolute',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#78b0ff',
+  },
+  shareButtonText: {
+    fontSize: 16,
+  },
+});

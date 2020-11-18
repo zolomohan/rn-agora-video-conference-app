@@ -14,5 +14,26 @@ export default function Conference(props) {
     EndCall: () => navigation.goBack(),
   };
 
-  return <AgoraUIKit rtcProps={rtcProps} callbacks={callbacks} />;
+  const localButtonStyle = {
+    backgroundColor: '#78b0ff',
+    borderColor: '#78b0ff',
+  };
+
+  const styleProps = {
+    theme: '#000',
+    localBtnStyles: {
+      muteLocalAudio: localButtonStyle,
+      muteLocalVideo: localButtonStyle,
+      switchCamera: localButtonStyle,
+      fullScreen: localButtonStyle,
+    },
+  };
+
+  return (
+    <AgoraUIKit
+      rtcProps={rtcProps}
+      callbacks={callbacks}
+      styleProps={styleProps}
+    />
+  );
 }

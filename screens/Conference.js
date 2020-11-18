@@ -1,9 +1,17 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { TouchableOpacity, Text, StyleSheet, Share } from 'react-native';
 import AgoraUIKit from 'agora-rn-uikit';
 import { useNavigation } from '@react-navigation/native';
 
 export default function Conference(props) {
+  const onShare = async () => {
+    try {
+      await Share.share({ message: props.route.params.channel });
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
   const navigation = useNavigation();
 
   const rtcProps = {
@@ -37,7 +45,7 @@ export default function Conference(props) {
         callbacks={callbacks}
         styleProps={styleProps}
       />
-      <TouchableOpacity style={styles.shareButton}>
+      <TouchableOpacity style={styles.shareButton} onPress={onShare}>
         <Text style={styles.shareButtonText}>Share</Text>
       </TouchableOpacity>
     </>

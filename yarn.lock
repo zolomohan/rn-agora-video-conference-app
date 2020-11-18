@@ -1396,6 +1396,11 @@ acorn@^7.1.0, acorn@^7.1.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
 
+agora-rn-uikit@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/agora-rn-uikit/-/agora-rn-uikit-3.0.1.tgz#6f8d02c14a93fbed4040902ca585cc36e6599670"
+  integrity sha512-KE5LhajLnuLLuXKco63byfrGdGUz/kfzA5L/m9AKDoZFtNcct8z1XT2S0sKKcZY8YCBUhdP+9+N+DJwBPdGT8A==
+
 ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.3:
   version "6.12.6"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
@@ -5609,6 +5614,11 @@ react-is@^16.12.0, react-is@^16.13.0, react-is@^16.7.0, react-is@^16.8.1, react-
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-native-agora@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/react-native-agora/-/react-native-agora-3.1.3.tgz#d9f766d0f5e2ab5542cf698011bfa4ede7849fba"
+  integrity sha512-ijEH+3mpYAAyfSalVq8Z5e7zLYAaRlNVgBW6vwva+V3pR3KcXezv/V9SMGksbbFBoKJT4kscnUXkRztB83+4Yg==
 
 react-native-gesture-handler@^1.8.0:
   version "1.8.0"
